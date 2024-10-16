@@ -739,26 +739,23 @@
     </main>
 
     <script>
-        // When the icon container is clicked, trigger the file input click
         document.getElementById('icon-container').addEventListener('click', function () {
             document.getElementById('upload-input').click();
         });
 
-        // When an image is selected, show it in place of the icon
         document.getElementById('upload-input').addEventListener('change', function (event) {
             const file = event.target.files[0];
             if (file) {
                 const reader = new FileReader();
                 reader.onload = function (e) {
                     document.getElementById('icon-img').src = e.target.result;
-                    document.getElementById('icon-img').classList.remove('hidden'); // Show the uploaded image
-                    document.getElementById('icon-svg').classList.add('hidden'); // Hide the SVG icon
+                    document.getElementById('icon-img').classList.remove('hidden');
+                    document.getElementById('icon-svg').classList.add('hidden');
                 };
-                reader.readAsDataURL(file); // Read the image file as a data URL
+                reader.readAsDataURL(file);
             }
         });
-    </script>
-    <script>
+
         function toggleStates(source, className) {
             const checkboxes = document.querySelectorAll(className);
             checkboxes.forEach(checkbox => {
