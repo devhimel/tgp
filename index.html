@@ -7,21 +7,476 @@
 </head>
 <body>
 <main class="px-16 py-4">
-    <section >
+    <section>
         <div class="grid grid-cols-12 gap-16">
             <div class="col-span-3 pr-14">
                 <img src="https://placehold.co/600x400" alt="">
             </div>
             <div class="col-span-9">
-                <h1 class="text-3xl font-bold">
+                <h1 class="text-4xl font-bold">
                     Headline text Headline text Headline text Headline text Headline text
                 </h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at, atque corporis fuga quam quisquam. Perspiciatis quasi quo sed velit voluptates? Animi dolorem eum maiores neque possimus quo, repellat sed?</p>
+                <p class="text-xl text-justify text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ab at, atque corporis fuga
+                    quam quisquam. Perspiciatis quasi quo sed velit voluptates? Animi dolorem eum maiores neque possimus
+                    quo, repellat sed?</p>
+            </div>
+        </div>
+        <hr class="bg-gray-300 h-1 my-4">
+        <div>
+            <h2 class="text-3xl font-semibold">Headline text Headline text Headline text Headline text Headline text
+                Headline text Headline text Headline text</h2>
+            <p class="text-xl text-justify text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Incidunt mollitia
+                praesentium quidem quis quisquam rerum ut? Corporis doloribus eligendi et excepturi expedita fuga fugiat
+                ipsa, iste maxime modi sit ut voluptate, voluptatibus. Alias commodi, deserunt dolore dolores doloribus
+                earum est eveniet exercitationem harum, illo impedit nulla obcaecati placeat quas sit suscipit
+                voluptatibus. Adipisci distinctio eius, eveniet facere, fuga inventore laborum magni nesciunt obcaecati,
+                quae quam reprehenderit voluptas. Distinctio error molestiae nihil unde? Aliquid deleniti natus,
+                pariatur quaerat quas rem voluptas.</p>
+        </div>
+        <hr class="bg-gray-300 h-1 my-4">
+    </section>
+    <section class="grid grid-cols-12 gap-16">
+        <div class="col-span-3 content-end">
+            <h2 class="text-4xl font-extrabold text-white text-center py-2.5 bg-[#4D8298]">
+                Grant Writer
+            </h2>
+        </div>
+        <div class="col-span-9 space-y-3.5">
+            <div class="justify-items-end">
+                <!--  Pagination  -->
+                <div class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between" id="rowFilter">
+                    <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
+                        <a href="#"
+                           class="disabled relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
+                            <span class="sr-only">Previous</span>
+                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                      d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-current="page"
+                           class="mx-2 active my-active relative z-10 inline-flex items-center bg-[#2d4352] px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">1</a>
+                        <a href="https://www.tgp-stage2.com?sort_by=id&amp;filter=0&amp;page=2" aria-current="page"
+                           class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">2</a>
+                        <a href="https://www.tgp-stage2.com?sort_by=id&amp;filter=0&amp;page=3" aria-current="page"
+                           class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">3</a>
+                        <a href="https://www.tgp-stage2.com?sort_by=id&amp;filter=0&amp;page=4" aria-current="page"
+                           class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">4</a>
+
+                        <a href="https://www.tgp-stage2.com?sort_by=id&amp;filter=0&amp;page=2"
+                           class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
+                            <span class="sr-only">Next</span>
+                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                      d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-4">
+                    <div class="relative text-gray-600">
+                        <input type="search" name="serch" placeholder="Search Writer by Location"
+                               class="bg-white h-10 px-5 pr-10 rounded border-2 text-sm focus:outline-none">
+                        <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+                            <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                                 viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;"
+                                 xml:space="preserve" width="512px" height="512px">
+                              <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <button class="px-4 py-1.5 bg-[#2C4352] text-white rounded">See All</button>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="relative text-gray-600">
+                        <input type="search" name="serch" placeholder="Search Writer by Interest"
+                               class="bg-white h-10 px-5 pr-10 rounded border-2 text-sm focus:outline-none">
+                        <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+                            <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                                 viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;"
+                                 xml:space="preserve" width="512px" height="512px">
+                              <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <button class="px-4 py-1.5 bg-[#2C4352] text-white rounded">See All</button>
+                </div>
             </div>
         </div>
     </section>
-    <section class="grid grid-cols-12">
-
+    <hr class="bg-[#4D8298] h-1 my-4 col-span-12">
+    <section class="grid grid-cols-12 gap-16">
+        <div class="col-span-3">
+            <img src="https://placehold.co/600x400" alt="">
+        </div>
+        <div class="col-span-9 space-y-4">
+            <div class="bg-[#4D8298] rounded ps-8 py-3 text-white">
+                <h2 class="text-3xl font-extrabold ">
+                    {First Name}
+                </h2>
+                <h4 class="text-2xl font-semibold">
+                    {Job Title}
+                </h4>
+            </div>
+            <!--  About Me Start  -->
+            <div>
+                <h4 class="text-2xl font-semibold text-[#4D8298]">About Me</h4>
+                <p class="text-xl text-justify text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Alias consequatur corporis enim, fuga minus nam natus nemo quaerat, quisquam ratione sapiente sed
+                    tempore velit vitae voluptas voluptatibus voluptatum. Ab architecto blanditiis consequuntur
+                    delectus, eum exercitationem facere inventore magni nostrum, nulla omnis pariatur quis tenetur.
+                    Ad?</p>
+            </div>
+            <!--  About Me End  -->
+            <!--  My services Start  -->
+            <div class="pt-4">
+                <h4 class="text-2xl font-semibold text-[#4D8298]">My Services</h4>
+                <p class="text-xl text-justify text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Alias consequatur corporis enim, fuga minus nam natus nemo quaerat, quisquam ratione sapiente sed
+                    tempore velit vitae voluptas voluptatibus voluptatum. Ab architecto blanditiis consequuntur
+                    delectus, eum exercitationem facere inventore magni nostrum, nulla omnis pariatur quis tenetur.
+                    Ad?</p>
+            </div>
+            <!--  My services End  -->
+            <!--  My Successes Start  -->
+            <div class="pt-4">
+                <h4 class="text-2xl font-semibold text-[#4D8298]">My Successes</h4>
+                <p class="text-xl text-justify text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Alias consequatur corporis enim, fuga minus nam natus nemo quaerat, quisquam ratione sapiente sed
+                    tempore velit vitae voluptas voluptatibus voluptatum. Ab architecto blanditiis consequuntur
+                    delectus, eum exercitationem facere inventore magni nostrum, nulla omnis pariatur quis tenetur.
+                    Ad?</p>
+            </div>
+            <!--  My Successes End  -->
+            <!--  Grant Writer Location Start  -->
+            <div>
+                <h4 class="text-2xl font-semibold text-[#4D8298]">Grant Writer Location</h4>
+                <div class="flex items-center pt-2">
+                    <input checked id="checked-checkbox" type="checkbox" value=""
+                           class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="checked-checkbox" class="ms-2 text-xl font-medium text-gray-700 dark:text-gray-300">New
+                        Jersey (USA)</label>
+                </div>
+            </div>
+            <!--  Grant Writer Location End  -->
+            <!--  Grant Writing Interests Start  -->
+            <div>
+                <h4 class="text-2xl font-semibold text-[#4D8298]">Grant Writer Location</h4>
+                <div class="flex justify-between items-center">
+                    <div class="pt-2">
+                        <div class="flex items-center pt-2">
+                            <input checked id="1" type="checkbox" value=""
+                                   class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checked-checkbox"
+                                   class="ms-2 text-xl font-medium text-gray-700 dark:text-gray-300">Aging/Seniors</label>
+                        </div>
+                        <div class="flex items-center pt-2">
+                            <input checked id="2" type="checkbox" value=""
+                                   class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checked-checkbox"
+                                   class="ms-2 text-xl font-medium text-gray-700 dark:text-gray-300">Agriculture &
+                                Farming</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center pt-2">
+                            <input checked id="3" type="checkbox" value=""
+                                   class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checked-checkbox"
+                                   class="ms-2 text-xl font-medium text-gray-700 dark:text-gray-300">Arts, Culture,
+                                History & Humanities</label>
+                        </div>
+                        <div class="flex items-center pt-2">
+                            <input checked id="4" type="checkbox" value=""
+                                   class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checked-checkbox"
+                                   class="ms-2 text-xl font-medium text-gray-700 dark:text-gray-300">Awards</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center pt-2">
+                            <input checked id="5" type="checkbox" value=""
+                                   class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checked-checkbox"
+                                   class="ms-2 text-xl font-medium text-gray-700 dark:text-gray-300">Black, Indigenous,
+                                People of Color</label>
+                        </div>
+                        <div class="flex items-center pt-2">
+                            <input checked id="6" type="checkbox" value=""
+                                   class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checked-checkbox"
+                                   class="ms-2 text-xl font-medium text-gray-700 dark:text-gray-300">Homeland & National
+                                Security</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Grant Writing Interests End  -->
+            <div class="float-end">
+                <button class="bg-[#5CC074] text-white px-8 py-3 rounded flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"/>
+                    </svg>
+                    <span class="ps-2">
+                        Contact Me
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <hr class="bg-[#4D8298] h-1 my-4 col-span-12">
+    <section class="grid grid-cols-12 gap-16">
+        <div class="col-span-3">
+            <img src="https://placehold.co/600x400" alt="">
+        </div>
+        <div class="col-span-9 space-y-4">
+            <div class="bg-[#4D8298] rounded ps-8 py-3 text-white">
+                <h2 class="text-3xl font-extrabold ">
+                    {First Name}
+                </h2>
+                <h4 class="text-2xl font-semibold">
+                    {Job Title}
+                </h4>
+            </div>
+            <!--  About Me Start  -->
+            <div>
+                <h4 class="text-2xl font-semibold text-[#4D8298]">About Me</h4>
+                <p class="text-xl text-justify text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Alias consequatur corporis enim, fuga minus nam natus nemo quaerat, quisquam ratione sapiente sed
+                    tempore velit vitae voluptas voluptatibus voluptatum. Ab architecto blanditiis consequuntur
+                    delectus, eum exercitationem facere inventore magni nostrum, nulla omnis pariatur quis tenetur.
+                    Ad?</p>
+            </div>
+            <!--  About Me End  -->
+            <!--  My services Start  -->
+            <div class="pt-4">
+                <h4 class="text-2xl font-semibold text-[#4D8298]">My Services</h4>
+                <p class="text-xl text-justify text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Alias consequatur corporis enim, fuga minus nam natus nemo quaerat, quisquam ratione sapiente sed
+                    tempore velit vitae voluptas voluptatibus voluptatum. Ab architecto blanditiis consequuntur
+                    delectus, eum exercitationem facere inventore magni nostrum, nulla omnis pariatur quis tenetur.
+                    Ad?</p>
+            </div>
+            <!--  My services End  -->
+            <!--  My Successes Start  -->
+            <div class="pt-4">
+                <h4 class="text-2xl font-semibold text-[#4D8298]">My Successes</h4>
+                <p class="text-xl text-justify text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Alias consequatur corporis enim, fuga minus nam natus nemo quaerat, quisquam ratione sapiente sed
+                    tempore velit vitae voluptas voluptatibus voluptatum. Ab architecto blanditiis consequuntur
+                    delectus, eum exercitationem facere inventore magni nostrum, nulla omnis pariatur quis tenetur.
+                    Ad?</p>
+            </div>
+            <!--  My Successes End  -->
+            <!--  Grant Writer Location Start  -->
+            <div>
+                <h4 class="text-2xl font-semibold text-[#4D8298]">Grant Writer Location</h4>
+                <div class="flex items-center pt-2">
+                    <input checked id="checked-checkbox" type="checkbox" value=""
+                           class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="checked-checkbox" class="ms-2 text-xl font-medium text-gray-700 dark:text-gray-300">New
+                        Jersey (USA)</label>
+                </div>
+            </div>
+            <!--  Grant Writer Location End  -->
+            <!--  Grant Writing Interests Start  -->
+            <div>
+                <h4 class="text-2xl font-semibold text-[#4D8298]">Grant Writer Location</h4>
+                <div class="flex justify-between items-center">
+                    <div class="pt-2">
+                        <div class="flex items-center pt-2">
+                            <input checked id="1" type="checkbox" value=""
+                                   class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checked-checkbox"
+                                   class="ms-2 text-xl font-medium text-gray-700 dark:text-gray-300">Aging/Seniors</label>
+                        </div>
+                        <div class="flex items-center pt-2">
+                            <input checked id="2" type="checkbox" value=""
+                                   class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checked-checkbox"
+                                   class="ms-2 text-xl font-medium text-gray-700 dark:text-gray-300">Agriculture &
+                                Farming</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center pt-2">
+                            <input checked id="3" type="checkbox" value=""
+                                   class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checked-checkbox"
+                                   class="ms-2 text-xl font-medium text-gray-700 dark:text-gray-300">Arts, Culture,
+                                History & Humanities</label>
+                        </div>
+                        <div class="flex items-center pt-2">
+                            <input checked id="4" type="checkbox" value=""
+                                   class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checked-checkbox"
+                                   class="ms-2 text-xl font-medium text-gray-700 dark:text-gray-300">Awards</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center pt-2">
+                            <input checked id="5" type="checkbox" value=""
+                                   class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checked-checkbox"
+                                   class="ms-2 text-xl font-medium text-gray-700 dark:text-gray-300">Black, Indigenous,
+                                People of Color</label>
+                        </div>
+                        <div class="flex items-center pt-2">
+                            <input checked id="6" type="checkbox" value=""
+                                   class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checked-checkbox"
+                                   class="ms-2 text-xl font-medium text-gray-700 dark:text-gray-300">Homeland & National
+                                Security</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Grant Writing Interests End  -->
+            <div class="float-end">
+                <button class="bg-[#5CC074] text-white px-8 py-3 rounded flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"/>
+                    </svg>
+                    <span class="ps-2">
+                        Contact Me
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <hr class="bg-[#4D8298] h-1 my-4 col-span-12">
+    <section class="grid grid-cols-12 gap-16">
+        <div class="col-span-3">
+            <img src="https://placehold.co/600x400" alt="">
+        </div>
+        <div class="col-span-9 space-y-4">
+            <div class="bg-[#4D8298] rounded ps-8 py-3 text-white">
+                <h2 class="text-3xl font-extrabold ">
+                    {First Name}
+                </h2>
+                <h4 class="text-2xl font-semibold">
+                    {Job Title}
+                </h4>
+            </div>
+            <!--  About Me Start  -->
+            <div>
+                <h4 class="text-2xl font-semibold text-[#4D8298]">About Me</h4>
+                <p class="text-xl text-justify text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Alias consequatur corporis enim, fuga minus nam natus nemo quaerat, quisquam ratione sapiente sed
+                    tempore velit vitae voluptas voluptatibus voluptatum. Ab architecto blanditiis consequuntur
+                    delectus, eum exercitationem facere inventore magni nostrum, nulla omnis pariatur quis tenetur.
+                    Ad?</p>
+            </div>
+            <!--  About Me End  -->
+            <!--  My services Start  -->
+            <div class="pt-4">
+                <h4 class="text-2xl font-semibold text-[#4D8298]">My Services</h4>
+                <p class="text-xl text-justify text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Alias consequatur corporis enim, fuga minus nam natus nemo quaerat, quisquam ratione sapiente sed
+                    tempore velit vitae voluptas voluptatibus voluptatum. Ab architecto blanditiis consequuntur
+                    delectus, eum exercitationem facere inventore magni nostrum, nulla omnis pariatur quis tenetur.
+                    Ad?</p>
+            </div>
+            <!--  My services End  -->
+            <!--  My Successes Start  -->
+            <div class="pt-4">
+                <h4 class="text-2xl font-semibold text-[#4D8298]">My Successes</h4>
+                <p class="text-xl text-justify text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Alias consequatur corporis enim, fuga minus nam natus nemo quaerat, quisquam ratione sapiente sed
+                    tempore velit vitae voluptas voluptatibus voluptatum. Ab architecto blanditiis consequuntur
+                    delectus, eum exercitationem facere inventore magni nostrum, nulla omnis pariatur quis tenetur.
+                    Ad?</p>
+            </div>
+            <!--  My Successes End  -->
+            <!--  Grant Writer Location Start  -->
+            <div>
+                <h4 class="text-2xl font-semibold text-[#4D8298]">Grant Writer Location</h4>
+                <div class="flex items-center pt-2">
+                    <input checked id="checked-checkbox" type="checkbox" value=""
+                           class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="checked-checkbox" class="ms-2 text-xl font-medium text-gray-700 dark:text-gray-300">New
+                        Jersey (USA)</label>
+                </div>
+            </div>
+            <!--  Grant Writer Location End  -->
+            <!--  Grant Writing Interests Start  -->
+            <div>
+                <h4 class="text-2xl font-semibold text-[#4D8298]">Grant Writer Location</h4>
+                <div class="flex justify-between items-center">
+                    <div class="pt-2">
+                        <div class="flex items-center pt-2">
+                            <input checked id="1" type="checkbox" value=""
+                                   class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checked-checkbox"
+                                   class="ms-2 text-xl font-medium text-gray-700 dark:text-gray-300">Aging/Seniors</label>
+                        </div>
+                        <div class="flex items-center pt-2">
+                            <input checked id="2" type="checkbox" value=""
+                                   class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checked-checkbox"
+                                   class="ms-2 text-xl font-medium text-gray-700 dark:text-gray-300">Agriculture &
+                                Farming</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center pt-2">
+                            <input checked id="3" type="checkbox" value=""
+                                   class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checked-checkbox"
+                                   class="ms-2 text-xl font-medium text-gray-700 dark:text-gray-300">Arts, Culture,
+                                History & Humanities</label>
+                        </div>
+                        <div class="flex items-center pt-2">
+                            <input checked id="4" type="checkbox" value=""
+                                   class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checked-checkbox"
+                                   class="ms-2 text-xl font-medium text-gray-700 dark:text-gray-300">Awards</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center pt-2">
+                            <input checked id="5" type="checkbox" value=""
+                                   class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checked-checkbox"
+                                   class="ms-2 text-xl font-medium text-gray-700 dark:text-gray-300">Black, Indigenous,
+                                People of Color</label>
+                        </div>
+                        <div class="flex items-center pt-2">
+                            <input checked id="6" type="checkbox" value=""
+                                   class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checked-checkbox"
+                                   class="ms-2 text-xl font-medium text-gray-700 dark:text-gray-300">Homeland & National
+                                Security</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Grant Writing Interests End  -->
+            <div class="float-end">
+                <button class="bg-[#5CC074] text-white px-8 py-3 rounded flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"/>
+                    </svg>
+                    <span class="ps-2">
+                        Contact Me
+                    </span>
+                </button>
+            </div>
+        </div>
     </section>
 </main>
 </body>
