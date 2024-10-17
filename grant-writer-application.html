@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>grant-writer-directory-form</title>
+    <link rel="stylesheet" href="./tailwindcss.css">
+</head>
+
+<body class="bg-gray-100">
+    <main class="px-16 py-4">
+
+        <!-- Form Section -->
+        <section class="grid grid-cols-12 gap-16">
+            <div class="col-span-12 bg-white p-6 shadow-md rounded-lg">
+                <h2 class="text-xl font-semibold mt-2">
+                    I am a Grant Writer. I want to list my services on The Grant Portal's Grant Writer Directory.</h2>
+                <p class="my-2">General information about your services will be shared to all web visitors but without
+                    your contact
+                    information. Your contact information will be shared only to paid subscribers of The Grant Portal.
+                </p>
+                <form>
+                    <!-- Job Title and Country -->
+                    <div class="grid grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="job-title" class="font-semibold text-gray-700">
+                                Job Title - Example: President, CEO, Managing Partner, etc</label>
+                            <input type="text" id="job-title"
+                                placeholder="Example: President, CEO, Managing Partner, etc"
+                                class="mt-1 w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                        <div>
+                            <label for="country" class="font-semibold text-gray-700">Country</label>
+                            <input type="text" id="country" placeholder="Country"
+                                class="mt-1 w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                    </div>
+
+                    <!-- Name Fields -->
+                    <div class="grid grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="first-name" class="font-semibold text-gray-700">First Name</label>
+                            <input type="text" id="first-name" placeholder="First Name"
+                                class="mt-1 w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                        <div>
+                            <label for="last-name" class="font-semibold text-gray-700">Last Name</label>
+                            <input type="text" id="last-name" placeholder="Last Name"
+                                class="mt-1 w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                    </div>
+
+                    <!-- Address Fields -->
+                    <div class="grid grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="address1" class="font-semibold text-gray-700">Address Line 1</label>
+                            <input type="text" id="address1" placeholder="Address Line 1"
+                                class="mt-1 w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                        <div>
+                            <label for="address2" class="font-semibold text-gray-700">Address Line 2 (Optional)</label>
+                            <input type="text" id="address2" placeholder="Address Line 2"
+                                class="mt-1 w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                    </div>
+
+                    <!-- City, State, Zip Fields -->
+                    <div class="grid grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="city" class="font-semibold text-gray-700">City</label>
+                            <input type="text" id="city" placeholder="City"
+                                class="mt-1 w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                        <div>
+                            <label for="state" class="font-semibold text-gray-700">State</label>
+                            <input type="text" id="state" placeholder="State"
+                                class="mt-1 w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                    </div>
+
+                    <!-- Company/Organization and Business Phone -->
+                    <div class="grid grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="compony" class="font-semibold text-gray-700">Company/Organization</label>
+                            <input type="text" id="compony" placeholder="Company/Organization"
+                                class="mt-1 w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                        <div>
+                            <label for="businessPhone" class="font-semibold text-gray-700">Business Phone</label>
+                            <input type="text" id="businessPhone" placeholder="Business Phone"
+                                class="mt-1 w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                    </div>
+
+                    <!-- Cell Phone and Zip -->
+                    <div class="grid grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="cellPhone" class="font-semibold text-gray-700">Cell Phone</label>
+                            <input type="text" id="cellPhone" placeholder="Cell Phone"
+                                class="mt-1 w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                        <div>
+                            <label for="zipCode" class="font-semibold text-gray-700">Zip Postal Code</label>
+                            <input type="text" id="zipCode" placeholder="Zip Postal Code"
+                                class="mt-1 w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                    </div>
+
+
+                    <!-- Email, Phone, Website -->
+                    <div class="grid grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="email" class="font-semibold text-gray-700">Email Address</label>
+                            <input type="email" id="email" placeholder="Email"
+                                class="mt-1 w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+
+                        <div>
+                            <label for="website" class="font-semibold text-gray-700">Website (Optional)</label>
+                            <input type="text" id="website" placeholder="Website"
+                                class="mt-1 w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                    </div>
+
+                    <!-- About Me Section -->
+                    <div class="mb-6">
+                        <label for="about-me" class="font-semibold text-gray-700">About Me -
+                            <span class="text-gray-500">General Description</span></label>
+                        <p class="my-2">This general description about you is shared to all site visitors. List areas of
+                            expertices,
+                            years of experience and describe your experience. Do not list contact information. The
+                            content will be reviewed and updated to the web page by The Grant Portal Staff. Please limit
+                            content to 500 characters.</p>
+                        <textarea id="about-me" rows="4" class="mt-1 w-full p-2 border border-gray-300 rounded-md"
+                            placeholder="Please limit content to 600 characters"></textarea>
+                    </div>
+
+                    <!-- My Services Section -->
+                    <div class="mb-6">
+                        <label for="my-services" class="font-semibold text-gray-700">My Services - General
+                            Description</label>
+                        <p class="my-2">This general description about your grant writing services.This information is
+                            shared to all
+                            site visitors.List areas such as grant research, grant recommendations, business plan
+                            mobeling, consultation services etc. Do not list contact information.The content will be
+                            reviewed and updated to the web page by The Grant Portal Staff. Please limit content to 500
+                            characters.</p>
+                        <textarea id="my-services" rows="4" class="mt-1 w-full p-2 border border-gray-300 rounded-md"
+                            placeholder="Please limit content to 600 characters"></textarea>
+                    </div>
+
+                    <!-- My Services Section -->
+                    <div class="mb-6">
+                        <label for="my-success" class="font-semibold text-gray-700">My Success - General
+                            Desciption</label>
+                        <p class="my-2">This general description about your success as a result of your grant writing
+                            services. This
+                            information is shared to all site visitors. List areas such as number of grants successfully
+                            awarded, the grant amounts awarded, personal awards that you may have received, etc. Do not
+                            list contact information. The content will be reviewed and updated to the web page by The
+                            Grant Portal Staff. Please limit content to 500</p>
+                        <textarea id="my-success" rows="4" class="mt-1 w-full p-2 border border-gray-300 rounded-md"
+                            placeholder="Please limit content to 600 characters"></textarea>
+                    </div>
+
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-bold mb-2">My Location
+                            <span class="text-red-600 font-semibold text-sm">- This information will be shared to all
+                                visitors</span>
+                        </h2>
+                        <div class="grid grid-cols-4 gap-6 ml-6 mb-6">
+                            <div>
+                                <label class="block mb-2 cursor-pointer -ml-5"><input type="checkbox"
+                                        onclick="toggleStates(this, '.usa-state')" class="mr-2">
+                                    United States
+                                    (All)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Alabama
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Alaska
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Arizona
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Arkansas
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    California
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Colorado
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Connecticut (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Delaware
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Florida
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Georgia
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Hawaii
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Idaho
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Illinois
+                                    (USA)|</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Indiana
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    lowa
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Kansas
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Kentucky
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Louisiana
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Maine
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Maryland
+                                    (USA)</label>
+                            </div>
+                            <div>
+
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Massachusetts
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Michigan
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Minnesota
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Mississippi (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Missouri
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Montana
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Nebraska
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Nevada
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    New
+                                    Hampshire
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    New Jersey
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    New Mexico
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    New York
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    New York
+                                    City
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    North
+                                    Carolina
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    North
+                                    Dakota
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Ohio
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Oklahoma
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Oregon
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Pennsylvania
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Rhode
+                                    Island
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    South
+                                    Carolina
+                                    (USA)</label>
+                            </div>
+                            <div>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    South
+                                    Dakota
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Tennessee
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Texas
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Utah
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Vermont
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Virginia
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Washington
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Washington, DC
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    West
+                                    Virginia
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Wisconsin
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox" class="mr-2 usa-state">
+                                    Wyoming
+                                    (USA)</label>
+                                <!-- Canada -->
+                                <label class="block mb-2 cursor-pointer -ml-5"><input
+                                        onclick="toggleStates(this, '.canada-state')" type="checkbox" class="mr-2">
+                                    Canada
+                                    (All)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 canada-state"> Alberta
+                                    (Canada)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 canada-state"> British
+                                    Columbia
+                                    (Canada)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 canada-state"> Manitoba
+                                    (Canada)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 canada-state"> New
+                                    Brunswick
+                                    (Canada)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 canada-state"> New
+                                    Brunswick
+                                    (Canada)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 canada-state">
+                                    Newfoundland and Labrador
+                                    (Canada)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 canada-state"> Northwest
+                                    Territories
+                                    (Canada)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 canada-state"> Nova
+                                    Scotia
+                                    (Canada)</label>
+
+                            </div>
+                            <div>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 canada-state"> Nunavut
+                                    (Canada)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 canada-state"> Ontario
+                                    (Canada)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 canada-state"> Prince
+                                    Edward Island
+                                    (Canada)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 canada-state"> Quebec
+                                    (Canada)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 canada-state">
+                                    Saskatchewan
+                                    (Canada)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 canada-state"> Yukon
+                                    (Canada)</label>
+                                <!-- US Territories(All) -->
+                                <label class="block mb-2 cursor-pointer -ml-5"><input type="checkbox"
+                                        onclick="toggleStates(this, '.territories-state')" class="mr-2"> US
+                                    Territories(All)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 territories-state"> American
+                                    Samoa
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 territories-state"> Guam
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 territories-state"> Northern
+                                    Mariana Islands
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 territories-state"> Puerto
+                                    Rico (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 territories-state"> Virgin
+                                    Islands
+                                    (USA)</label>
+
+                                <!-- USA Compact(All) -->
+                                <label class="block mb-2 cursor-pointer -ml-5"><input type="checkbox"
+                                        onclick="toggleStates(this, '.usa-compact-state')" class="mr-2"> USA
+                                    Compact(All)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 usa-compact-state"> Marshall
+                                    Islands
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 usa-compact-state"> Republic
+                                    of Palau
+                                    (USA)</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 usa-compact-state"> The
+                                    Federated States of Micronesia (USA)</label>
+                                <!-- International -->
+                                <label class="block mb-2 cursor-pointer -ml-5"><input type="checkbox"
+                                        onclick="toggleStates(this, '.international-state')" class="mr-2">
+                                    International</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 international-state">
+                                    Internationall</label>
+                                <!-- Israel -->
+                                <label class="block mb-2 cursor-pointer -ml-5"><input type="checkbox"
+                                        onclick="toggleStates(this, '.israel-state')" class="mr-2">
+                                    Israel</label>
+                                <label class="block mb-2 cursor-pointer"><input type="checkbox"
+                                        class="mr-2 israel-state">
+                                    Israel</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-semibold mb-2">My Interests
+                            <span class="text-red-600 text-sm">- This information will be shared to all visitors</span>
+                        </h2>
+                        <div class="grid grid-cols-12 gap-4 mb-6 ml-2">
+                            <!-- First column -->
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Alabama
+                                (USA)</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2">
+                                Aging/Seniors</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Black,
+                                Indigenous, People of Color</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Climate
+                                Change</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Conflict
+                                Resolution</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Domestic
+                                Violence</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2">
+                                Energy</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Food &
+                                Nutrition</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Homeland &
+                                National Security</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2">
+                                Individual</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Mental
+                                Health</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Opportunity
+                                Zone Benefits</label>
+
+                            <!-- Second column -->
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2">
+                                Preservation</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Research &
+                                Evaluation</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Social
+                                Justice</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Substance
+                                Abuse</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Travel &
+                                Tourism</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Arts,
+                                Culture, History & Humanities</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Capital
+                                Funding</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Community
+                                Development & Services</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2">
+                                Disabilities</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Elementary
+                                Education</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Faith
+                                Based</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Higher
+                                Education</label>
+
+                            <!-- Third column -->
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2">
+                                Housing</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Law,
+                                Justice, Juvenile Justice & Legal Services</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Natural
+                                Resources</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2">
+                                Pets/Animals/Wildlife</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2">
+                                Refugee/Immigrant</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Secondary
+                                Education</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Sports &
+                                Recreation</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2">
+                                Technology</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2">
+                                Women</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Agriculture
+                                & Farming</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Business &
+                                Commerce</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> College
+                                Scholarship</label>
+
+                            <!-- Fourth column -->
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Coronavirus
+                                COVID-19</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2">
+                                Education</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2">
+                                Environment</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Health &
+                                Medical</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2">
+                                Homeless</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2">
+                                International</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2">
+                                Municipalities</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2">
+                                Other</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Quality of
+                                Life</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Science,
+                                Technology Research & Development</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2"> Special
+                                Education</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2">
+                                Teachers</label>
+                            <label
+                                class="col-span-3 flex items-center cursor-pointer flex items-center cursor-pointer"><input
+                                    type="checkbox" class="mr-2">
+                                Veterans</label>
+                        </div>
+                    </div>
+
+                    <!-- Reset button -->
+                    <div class="flex justify-end mt-2">
+                        <button type="reset" class="px-6 py-2 bg-gray-300 text-gray-800 rounded-md">CLEAR</button>
+                    </div>
+
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-semibold mb-2">My Profile Image or Company Logo
+                            <span class="text-red-600 text-sm">- The Profile Image will be shared to all visitors.
+                                Company
+                                Logo will be shared only to paid subscribers.</span>
+                        </h2>
+
+                        <div class="mb-4">
+                            <div class="w-32 h-32 bg-gray-200 border border-black rounded-full relative flex items-center justify-center"
+                                id="icon-container">
+                                <img id="icon-img" class="hidden w-full h-full rounded-full object-cover"
+                                    alt="Uploaded Image" />
+                                <svg id="icon-svg" class="w-16 h-16 text-black" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                                </svg>
+                                <span class="absolute bottom-4 right-1 p-2 rounded-full bg-white">
+                                    <!-- New Pencil Icon -->
+                                    <svg class="h-5 w-5 text-black" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Hidden input for image upload -->
+                        <input type="file" id="upload-input" class="hidden" accept="image/*" />
+
+
+
+                        <p class="text-sky-600 mb-4">Upload a .png or .jpg image of yourself or your
+                            company logo and check the preview to arrange within the horizontal space. This will appear
+                            on List of Grant Writers' page and your public profile page.</p>
+
+                        <div class="flex items-start mb-4">
+                            <div class="bg-gray-100 p-4 border-2 border-sky-700 flex-1">
+                                <p class="text-gray-700 text-sm">
+                                    Complete your application and hit <strong>Submit</strong>. Once you submit your
+                                    application, the
+                                    Listing Status will change to <strong>'Pending TGP Approval'</strong>. You can view
+                                    your listing
+                                    by selecting <strong>'Preview Pending Listing'</strong> above. Once your listing is
+                                    approved, the
+                                    Listing Status will change to <strong>'Pending Grant Writer Approval'</strong>. You
+                                    will then
+                                    select <strong>'Preview Pending Listing'</strong> and either approve the listing or
+                                    edit it
+                                    and re-submit changes. If you approve the listing, you will then need to pay the
+                                    listing fee
+                                    in order to list your profile on the Grant Writer Directory.
+                                </p>
+                            </div>
+                            <div class="ml-2 flex items-center">
+                                <button type="submit" class="px-6 py-2 bg-sky-700 text-white rounded-md">Submit</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('icon-container').addEventListener('click', function () {
+            document.getElementById('upload-input').click();
+        });
+
+        document.getElementById('upload-input').addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById('icon-img').src = e.target.result;
+                    document.getElementById('icon-img').classList.remove('hidden');
+                    document.getElementById('icon-svg').classList.add('hidden');
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        function toggleStates(source, className) {
+            const checkboxes = document.querySelectorAll(className);
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = source.checked;
+            });
+        }
+    </script>
+</body>
+
+
+</html>

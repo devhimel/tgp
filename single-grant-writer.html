@@ -1,11 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Single Grant Writer</title>
+  <meta charset="UTF-8">
+  <title>Single Grant Writer</title>
   <link rel="stylesheet" href="./tailwindcss.css">
 </head>
-<body>
 
+<body class="bg-gray-100">
+
+  <main class="px-16 py-4">
+    <!-- Header -->
+    <div class="flex justify-between items-center border-b-4 border-sky-700 pb-5 mb-5">
+      <h1 class="text-3xl font-bold bg-sky-900 text-white rounded-sm px-3 py-2">Grant Writer</h1>
+      <div class="flex space-x-2">
+        <input type="text" placeholder="Search Writer by Location" class="border rounded-lg p-2 text-sm">
+        <input type="text" placeholder="Search Writer by Interest" class="border rounded-lg p-2 text-sm">
+        <button class="text-blue-500">See All</button>
+      </div>
+    </div>
+    <!-- Profile Section -->
+    <section>
+      <div class="grid grid-cols-12 gap-16">
+        <!-- Profile Image -->
+        <div class="col-span-3">
+          <img src="asset/image/dummy-customer-45678.jpg" alt="Profile or Logo"
+            class="w-48 sm:w-50 md:w-62 lg:w-70 xl:w-86 mx-auto rounded-lg shadow-md">
+        </div>
+
+
+
+        <!-- Profile Details -->
+        <div class="col-span-9">
+          <div class="bg-sky-900 text-white rounded-sm p-5 mb-3">
+            <h1 class="text-3xl font-bold">
+              {FirstName} {LastName}
+            </h1>
+            <h2 class="text-xl mb-4">{JobTitle}</h2>
+          </div>
+
+          <!-- About Me, My Services, My Successes -->
+          <div class="mb-4">
+            <h3 class="font-semibold text-sky-700 text-lg">About Me</h3>
+            <p class="ml-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+              been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.</p>
+          </div>
+          <div class="mb-4">
+            <h3 class="font-semibold text-sky-700 text-lg">My Services</h3>
+            <p class="ml-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+              been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.</p>
+          </div>
+          <div class="mb-4">
+            <h3 class="font-semibold text-sky-700 text-lg">My Successes</h3>
+            <p class="ml-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+              been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.</p>
+          </div>
+
+          <!-- Grant Writer Location -->
+          <div class="mb-5">
+            <h4 class="font-semibold text-sky-700 text-lg">Grant Writer Location</h4>
+            <div class="grid grid-cols-2 gap-2 md:gap-4 ml-2">
+              <label for="location1" class="flex items-center text-gray-600 cursor-pointer">
+                <input type="checkbox" id="location1" class="w-4 h-4 mr-2">
+                New Jersey (USA)
+              </label>
+              <label for="location2" class="flex items-center text-gray-600 cursor-pointer">
+                <input type="checkbox" id="location2" class="w-4 h-4 mr-2">
+                California (USA)
+              </label>
+              <label for="location3" class="flex items-center text-gray-600 cursor-pointer">
+                <input type="checkbox" id="location3" class="w-4 h-4 mr-2">
+                Texas (USA)
+              </label>
+              <label for="location4" class="flex items-center text-gray-600 cursor-pointer">
+                <input type="checkbox" id="location4" class="w-4 h-4 mr-2">
+                Florida (USA)
+              </label>
+            </div>
+
+          </div>
+
+
+          <!-- Grant Writing Interests -->
+          <div class="mb-5">
+            <h4 class="font-semibold text-sky-700 text-lg">Grant Writing Interests</h4>
+            <div class="grid grid-cols-2 gap-2 md:gap-4 ml-2">
+              <label for="aging" class="flex items-center text-gray-600 cursor-pointer">
+                <input type="checkbox" id="aging" class="w-4 h-4 mr-2">
+                Aging/Seniors
+              </label>
+              <label for="bipoc" class="flex items-center text-gray-600 cursor-pointer">
+                <input type="checkbox" id="bipoc" class="w-4 h-4 mr-2">
+                Black, Indigenous, People of Color
+              </label>
+              <label for="arts" class="flex items-center text-gray-600 cursor-pointer">
+                <input type="checkbox" id="arts" class="w-4 h-4 mr-2">
+                Arts, Culture, History & Humanities
+              </label>
+              <label for="business" class="flex items-center text-gray-600 cursor-pointer">
+                <input type="checkbox" id="business" class="w-4 h-4 mr-2">
+                Business & Commerce
+              </label>
+              <!-- Add more interests as needed -->
+            </div>
+
+          </div>
+
+
+          <!-- Contact Form -->
+          <div class="bg-gray-50 mt-10 p-5 rounded-lg">
+            <h4 class="font-semibold text-lg mb-5">Use the contact information to contact the Grant Writer</h4>
+            <form class="grid grid-cols-1 lg:grid-cols-2 gap-4 ml-2">
+              <div class="col-span-2">
+                <label for="jobTitle" class="text-gray-600">Job Title</label>
+                <input type="text" id="jobTitle" class="border rounded-lg w-full p-2"
+                  placeholder="Example: President, CEO">
+              </div>
+              <div>
+                <label for="firstName" class="text-gray-600">First Name</label>
+                <input type="text" id="firstName" class="border rounded-lg w-full p-2" placeholder="Enter first name">
+              </div>
+              <div>
+                <label for="lastName" class="text-gray-600">Last Name</label>
+                <input type="text" id="lastName" class="border rounded-lg w-full p-2" placeholder="Enter last name">
+              </div>
+              <div>
+                <label for="email" class="text-gray-600">Email Address</label>
+                <input type="email" id="email" class="border rounded-lg w-full p-2" placeholder="Enter email">
+              </div>
+              <div>
+                <label for="phone" class="text-gray-600">Cell Phone</label>
+                <input type="text" id="phone" class="border rounded-lg w-full p-2" placeholder="Enter phone number">
+              </div>
+              <!-- Add other form fields as necessary -->
+              <div class="col-span-2 text-right">
+                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
